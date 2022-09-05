@@ -1,0 +1,52 @@
+{
+  "name": "electron-app-template",
+  "version": "1.0.0",
+  "description": "Electron application template",
+  "build": {
+    "icon": "public/favicon.png",
+    "productName": "electron-app-template",
+    "files": [
+      "src/*",
+      "node_modules/**/*",
+      "package.json",
+      "package-lock.json",
+      "index.js"
+    ],
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "productivity",
+      "type": "distribution",
+      "hardenedRuntime": "true"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "productivity"
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-serve": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^20.1.1",
+    "electron-builder": "^23.3.3"
+  },
+  "type": "commonjs"
+}
